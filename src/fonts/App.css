@@ -19,10 +19,15 @@
 .container {
     width: 100vw;
     height: 100vh;
-    padding: 20px;
 }
 
 .details {
+    background-color: var(--white);
     align-items: center;
     display: flex;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
 }
