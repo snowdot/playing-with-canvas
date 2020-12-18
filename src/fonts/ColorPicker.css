@@ -1,0 +1,55 @@
+.form-group {
+    width: 220px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+
+.form-control-range {
+    border-radius: 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.form-control-range {
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.form-control-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+
+.form-control-range::-moz-range-thumb {
+    -webkit-appearance: none;
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+
+.form-control-range::-ms-thumb {
+    -webkit-appearance: none;
+    background: var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+}
+
+.preview {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 220px;
+}

@@ -1,7 +1,9 @@
-import './App.css';
+import './fonts/App.css';
+import React from 'react';
+import ColorPicker from './components/ColorPicker';
 
-const App = () => {
-    return null;
+export default function App() {
+    return (
+        <ColorPicker />
+    );
 }
-
-export default App;
