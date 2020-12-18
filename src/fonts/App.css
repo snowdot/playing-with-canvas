@@ -24,8 +24,9 @@
 .details {
     background-color: var(--white);
     align-items: center;
+    justify-content: center;
     display: flex;
-    max-width: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
