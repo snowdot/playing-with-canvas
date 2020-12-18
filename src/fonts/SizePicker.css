@@ -1,0 +1,12 @@
+.form-control {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    padding: 10px;
+}
+
+.form-control option {
+    cursor: pointer;
+    padding: 0 4px;
+}
