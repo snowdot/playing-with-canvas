@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Form from 'react-bootstrap/Form';
 
-export default function ColorPicker() {
-    const [color, setColor] = useState({
-        h: 50,
-        s: 50,
-        l: 50
-    });
+export default function ColorPicker({ color, setColor }) {
+
 
     const handleOnChange = (e) => {
         const name = e.target.name;
@@ -28,42 +24,39 @@ export default function ColorPicker() {
     }
 
     return (
-        <>
-            <Form>
-                <Form.Group>
-                    <Form.Label>Hue</Form.Label>
-                    <Form.Control
-                        name="h"
-                        type="range"
-                        onChange={handleOnChange}
-                        min={0}
-                        max={360}
-                        value={color.h}
-                        style={{backgroundImage: createGradient()}}
-                    />
-                    <Form.Label>Saturation</Form.Label>
-                    <Form.Control
-                        name="s"
-                        type="range"
-                        onChange={handleOnChange}
-                        min={0}
-                        max={100}
-                        value={color.s}
-                        style={{backgroundImage: `-webkit-linear-gradient(left, hsl(${color.h},0%,${color.l}%),hsl(${color.h},100%,${color.l}%))`}}
-                    />
-                    <Form.Label>Lightness</Form.Label>
-                    <Form.Control
-                        name="l"
-                        type="range"
-                        onChange={handleOnChange}
-                        min={0}
-                        max={100}
-                        value={color.l}
-                        style={{backgroundImage: `-webkit-linear-gradient(left, hsl(${color.h},${color.s}%,0%),hsl(${color.h},${color.s}%,100%))`}}
-                    />
-                </Form.Group>
-            </Form>
-            <div className="preview" style={{backgroundColor: `hsl(${color.h},${color.s}%,${color.l}%)`}}></div>
-        </>
+        <Form>
+            <Form.Group>
+                <Form.Label>Hue</Form.Label>
+                <Form.Control
+                    name="h"
+                    type="range"
+                    onChange={handleOnChange}
+                    min={0}
+                    max={360}
+                    value={color.h}
+                    style={{backgroundImage: createGradient()}}
+                />
+                <Form.Label>Saturation</Form.Label>
+                <Form.Control
+                    name="s"
+                    type="range"
+                    onChange={handleOnChange}
+                    min={0}
+                    max={100}
+                    value={color.s}
+                    style={{backgroundImage: `-webkit-linear-gradient(left, hsl(${color.h},0%,${color.l}%),hsl(${color.h},100%,${color.l}%))`}}
+                />
+                <Form.Label>Lightness</Form.Label>
+                <Form.Control
+                    name="l"
+                    type="range"
+                    onChange={handleOnChange}
+                    min={0}
+                    max={100}
+                    value={color.l}
+                    style={{backgroundImage: `-webkit-linear-gradient(left, hsl(${color.h},${color.s}%,0%),hsl(${color.h},${color.s}%,100%))`}}
+                />
+            </Form.Group>
+        </Form>
     );
 }
