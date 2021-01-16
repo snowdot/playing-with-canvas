@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/playing-with-canvas/static/css/main.1fceb2ad.chunk.css",
-    "main.js": "/playing-with-canvas/static/js/main.9f3d3342.chunk.js",
-    "main.js.map": "/playing-with-canvas/static/js/main.9f3d3342.chunk.js.map",
+    "main.css": "/playing-with-canvas/static/css/main.afe15625.chunk.css",
+    "main.js": "/playing-with-canvas/static/js/main.7dc8cc1d.chunk.js",
+    "main.js.map": "/playing-with-canvas/static/js/main.7dc8cc1d.chunk.js.map",
     "runtime-main.js": "/playing-with-canvas/static/js/runtime-main.66bf343d.js",
     "runtime-main.js.map": "/playing-with-canvas/static/js/runtime-main.66bf343d.js.map",
-    "static/js/2.ac4029d3.chunk.js": "/playing-with-canvas/static/js/2.ac4029d3.chunk.js",
-    "static/js/2.ac4029d3.chunk.js.map": "/playing-with-canvas/static/js/2.ac4029d3.chunk.js.map",
+    "static/js/2.de8ca75b.chunk.js": "/playing-with-canvas/static/js/2.de8ca75b.chunk.js",
+    "static/js/2.de8ca75b.chunk.js.map": "/playing-with-canvas/static/js/2.de8ca75b.chunk.js.map",
     "index.html": "/playing-with-canvas/index.html",
-    "static/css/main.1fceb2ad.chunk.css.map": "/playing-with-canvas/static/css/main.1fceb2ad.chunk.css.map",
-    "static/js/2.ac4029d3.chunk.js.LICENSE.txt": "/playing-with-canvas/static/js/2.ac4029d3.chunk.js.LICENSE.txt"
+    "static/css/main.afe15625.chunk.css.map": "/playing-with-canvas/static/css/main.afe15625.chunk.css.map",
+    "static/js/2.de8ca75b.chunk.js.LICENSE.txt": "/playing-with-canvas/static/js/2.de8ca75b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.66bf343d.js",
-    "static/js/2.ac4029d3.chunk.js",
-    "static/css/main.1fceb2ad.chunk.css",
-    "static/js/main.9f3d3342.chunk.js"
+    "static/js/2.de8ca75b.chunk.js",
+    "static/css/main.afe15625.chunk.css",
+    "static/js/main.7dc8cc1d.chunk.js"
   ]
 }
