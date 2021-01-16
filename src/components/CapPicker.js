@@ -1,15 +1,15 @@
 import React from 'react';
 import Form from 'react-bootstrap/Form';
 
-export default function CapsPicker({ setCaps }) {
+export default function CapPicker({ setCap }) {
 
     const handleOnChange = e => {
-        setCaps(e.target.value);
+        setCap(e.target.value);
     }
 
     return (
         <Form.Group>
-            <Form.Label>End caps</Form.Label>
+            <Form.Label>End cap</Form.Label>
             <Form.Control onChange={handleOnChange} as="select" htmlSize={3}>
                 <option value="butt">butt</option>
                 <option value="round">round</option>

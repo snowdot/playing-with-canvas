@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 
-export default function Canvas({ color, size, caps }) {
+export default function Canvas({ color, size, cap, setCanvas }) {
     const canvasRef = useRef(null);
     const [imageData, setImageData] = useState(null);
     const [innerSize, setInnerSize] = useState({
@@ -20,7 +20,7 @@ export default function Canvas({ color, size, caps }) {
 
         context.strokeStyle = `hsl(${color.h},${color.s}%,${color.l}%)`;
         context.lineWidth = size;
-        context.lineCap = caps;
+        context.lineCap = cap;
 
         if (imageData) {
             context.putImageData(imageData, 0, 0);
@@ -42,6 +42,7 @@ export default function Canvas({ color, size, caps }) {
             drawing = false;
             const image = context.getImageData(0, 0, canvas.width, canvas.height);
             setImageData(image);
+            setCanvas(canvas);
         }
 
         canvas.addEventListener('mousedown', mouseDownEvent);
@@ -53,16 +54,15 @@ export default function Canvas({ color, size, caps }) {
             canvas.removeEventListener('mouseup', mouseMoveUp);
             canvas.removeEventListener('mousemove', mouseMoveEvent);
         }
-    }, [innerSize, color, size, caps, imageData]);
+    }, [innerSize, color, size, cap, imageData, setCanvas]);
 
     useEffect(() => {
         window.addEventListener('resize', handleResize);
-        console.log('resize');
+
         return () => {
             window.removeEventListener('resize', handleResize);
-            console.log('remove');
         }
-    }, []);
+    });
 
     const handleResize = () => {
         setInnerSize({

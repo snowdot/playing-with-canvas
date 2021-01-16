@@ -1,0 +1,17 @@
+.download {
+  background-color: var(--orange);
+  border-radius: 50%;
+  color: var(--white);
+  cursor: pointer;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.download i {
+  font-size: 30px;
+}

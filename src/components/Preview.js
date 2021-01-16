@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 
-export default function Preview({ color, size, caps }) {
+export default function Preview({ color, size, cap }) {
     const canvasRef = useRef(null);
 
     useEffect(() => {
@@ -9,17 +9,17 @@ export default function Preview({ color, size, caps }) {
 
         ctx.strokeStyle = `hsl(${color.h},${color.s}%,${color.l}%)`;
         ctx.lineWidth = size;
-        ctx.lineCap = caps;
+        ctx.lineCap = cap;
 
         ctx.beginPath();
-        ctx.moveTo(20,20);
-        ctx.lineTo(80,80);
+        ctx.moveTo(20, 20);
+        ctx.lineTo(80, 80);
         ctx.stroke();
 
         return () => {
-            ctx.clearRect(0,0,100,100);
+            ctx.clearRect(0, 0, 100, 100);
         }
-    }, [color, size, caps]);
+    }, [color, size, cap]);
 
     return (
         <canvas

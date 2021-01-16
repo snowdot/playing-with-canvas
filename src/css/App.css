@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
 @import "./Canvas.css";
+@import "./Download.css";
 @import "./Preview.css";
 @import "./ColorPicker.css";
 @import "./SizePicker.css";
@@ -7,6 +8,7 @@
 :root {
   --white: #fff;
   --black: #000;
+  --orange: hsla(33, 100%, 50%, 1);
 }
 
 * {
