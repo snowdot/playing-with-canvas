@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './fonts/App.css';
+import './css/App.css';
 import Preview from './components/Preview';
 import ColorPicker from './components/ColorPicker';
 import SizePicker from './components/SizePicker';
@@ -25,7 +25,7 @@ export default function App() {
                 />
                 <ColorPicker
                     color={color}
-                    setColor={setColor}    
+                    setColor={setColor}
                 />
                 <SizePicker
                     setSize={setSize}
