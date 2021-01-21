@@ -26,14 +26,23 @@ export default function Canvas({ color, size, cap, setCanvas }) {
             context.putImageData(imageData, 0, 0);
         }
 
+        const getMousePositions = e => {
+            const rect = canvas.getBoundingClientRect();
+            const x = Math.trunc((e.clientX - rect.left));
+            const y = Math.trunc((e.clientY - rect.top));
+            return { x, y };
+        }
+
         const mouseDownEvent = e => {
+            const { x, y } = getMousePositions(e);
             drawing = true;
-            context.moveTo(e.clientX, e.clientY);
+            context.moveTo(x, y);
         }
 
         const mouseMoveEvent = e => {
             if (drawing) {
-                context.lineTo(e.clientX, e.clientY);
+                const { x, y } = getMousePositions(e);
+                context.lineTo(x, y);
                 context.stroke();
             }
         }
